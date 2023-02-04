@@ -1,0 +1,310 @@
+/*CSS Reset*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+.pembungkus-beranda {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  grid-template-rows: 50px 300px 200px 50px;
+  grid-template-areas: "header header" "content1 content2" "content1 content3" "footer footer";
+  gap: 10px;
+}
+
+.butir {
+  display: grid;
+  grid-template-columns: 50px auto 80px;
+  align-items: center;
+  grid-area: header;
+  background-color: #e3f2fd;
+}
+
+.logo {
+  margin-left: 20px;
+}
+
+.bab {
+  margin-left: 25px;
+  display: grid;
+  grid-template-columns: 140px 110px 100px 90px 1fr;
+  align-items: center;
+}
+
+.webname {
+  font-size: 32px;
+  font-family: "Bahnschrift", "Lucida Sans", Verdana, sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+.menu1,
+.menu2,
+.menu3,
+.masuk {
+  font: bold 18px "Calibri", "Lucida Sans", Verdana, sans-serif;
+}
+
+.masuk {
+  text-align: end;
+  justify-items: end;
+  margin-right: 20px;
+}
+
+.content1 {
+  margin-left: 10px;
+  grid-area: content1;
+  text-align: justify;
+}
+
+.tombol-mulai {
+  display: flex;
+  height: 38px;
+  justify-content: center;
+}
+
+.content2 {
+  margin-right: 10px;
+  grid-area: content2;
+  background-color: forestgreen;
+}
+
+.content3 {
+  margin-right: 10px;
+  grid-area: content3;
+  text-align: justify;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+/* CSS Menu Masuk */
+.formulir-masuk {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.judul-masuk {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.masuk-input {
+  width: 68px;
+}
+
+/* Form Daftar */
+.aktivasi-admin {
+  display: inline;
+  width: 300px;
+}
+
+.cek-aktivasi {
+  margin-left: 10px;
+  margin-top: -4px;
+}
+
+/* Lupa Sandi */
+.ceklis-lupa-sandi {
+  text-align: right !important;
+  margin-bottom: 20px;
+}
+
+/* Pilih Laptop */
+.pilih-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.bilah-sisi {
+  width: 25%;
+  position: fixed;
+  background-color: #e3f2fd;
+  margin-top: 50px;
+  height: 100%;
+}
+
+.konten-bilah {
+  margin: 10px;
+}
+
+.pencarian {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.pilihan-laptop {
+  font-weight: bold;
+  text-align: center;
+  box-sizing: border-box;
+  border: 2px solid #979090;
+}
+
+.tombol-mulai {
+  display: block;
+  text-align: center;
+}
+
+.konten-pilih {
+  margin-top: 50px;
+  margin-left: 25%;
+  width: 75%;
+  float: left;
+  background-color: lightcoral;
+  background-image: url(images/dust-scratches.jpg);
+  background-repeat: repeat;
+}
+
+.margin-pilih {
+  margin: 10px;
+}
+
+.konten-kartu {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.gambar-pilih {
+  height: 180px;
+}
+
+.halaman-pilih-1 {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.spek {
+  padding: 0 10px;
+}
+
+.tombol-pilih {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tgl-pilih {
+  height: 5px;
+  color: #979090;
+}
+
+.err {
+  color: red;
+}
+
+/* Kriteria */
+.kriteria-input {
+  width: 120px;
+}
+
+.btn-kriteria {
+  display: flex;
+  justify-content: space-around;
+}
+
+.kriteria-total {
+  margin-left: 80%;
+}
+
+/* Hasil */
+.pembungkus-hasil {
+  background-color: lightcoral;
+  background-image: url(images/dust-scratches.jpg);
+  background-repeat: repeat;
+}
+.konten-hasil {
+  width: 80%;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* float: left; */
+}
+
+/* Edit Laptop */
+.margin-edit {
+  width: 95%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-tambah {
+  width: 160px;
+}
+
+.pencarian-edit {
+  justify-content: space-between;
+}
+
+.masukan-pencarian {
+  width: 300px;
+}
+.vertikal-tengah {
+  vertical-align: middle;
+}
+
+.lebar-tombol {
+  width: 90px;
+}
+
+/* Proses Tambah Laptop */
+.konten-tambah {
+  margin: 30px;
+}
+
+.satuan {
+  font-size: 17px;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.satuan-harga {
+  font-size: 16px;
+  padding-top: 7px;
+  padding-right: 10px;
+}
+
+.err-petik {
+  color: red;
+  font-size: 26px;
+  margin-top: -9px;
+  padding-left: 5px;
+}
+
+/* Detail */
+
+.tombol-kembali {
+  margin-top: 10px;
+  margin-left: 250px;
+}
+
+/* Ubah-Laptop */
+.gambar-ubah {
+  display: inline;
+  margin-left: 220px;
+  margin-bottom: 30px;
+}
+
+/* Bantuan */
+.margin-bantuan {
+  margin: 30px;
+}
